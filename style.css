@@ -8,15 +8,35 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f4e4ba;
+  background-color: #00BBF9;
 }
 
 .container {
-  background-color: #fff;
+  background-color: lightgray;
+  border: 2px solid #187b9c;
+  border-radius: 18px;
   padding: 2rem;
-  border-radius: 1rem;
   min-height: 45vh;
-  width: 40vh;
+  width: 70vh;
+  box-shadow: rgba(0, 0, 0, 0.733) 0 0 90px 33px;
+}
+
+.title {
+  font-size: 40px;
+  color: #000000;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #ffffff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
 }
 
 form {
@@ -34,6 +54,7 @@ input {
 
 form input {
   border: 1px solid lightgray;
+  background-color: rgba(255, 255, 255, 0.653);
   font-size: 1rem;
   height: 3rem;
   padding-left: 0.5rem;
@@ -70,7 +91,11 @@ form input {
 }
 
 .msg {
-  margin: 2rem 0 2rem 0;
+  margin: 3rem 0 3rem 0;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+
 }
 
 form button {
